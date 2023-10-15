@@ -105,7 +105,7 @@ const Footer = () => {
                   h={"48px"}
                   bg={"gray.100"}
                 />
-                <Button colorScheme="twitter" size={"lg"} px={"30px"}>
+                <Button colorScheme='twitter' size={'lg'} px={'30px'}>
                   Subscribe
                 </Button>
               </Flex>

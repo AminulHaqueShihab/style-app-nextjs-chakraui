@@ -24,7 +24,7 @@ export default function Hero() {
       w={"full"}
       gap={10}
     >
-      <Stack alignItems={"center"}>
+      <Stack alignItems={"center"} my={'40px'}>
         <Text color={"#737373"} fontSize={"lg"}>
           WHAT WE DO
         </Text>

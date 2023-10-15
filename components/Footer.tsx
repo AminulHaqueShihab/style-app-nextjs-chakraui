@@ -24,7 +24,7 @@ const Footer = () => {
           </Flex>
         </Flex>
         <Divider my={"50px"} />
-        <Grid templateColumns={"repeat(6, 1fr)"} mb={'50px'}>
+        <Grid templateColumns={"repeat(5, 1fr)"} mb={'50px'}>
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Company Info

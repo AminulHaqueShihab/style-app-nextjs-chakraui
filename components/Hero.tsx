@@ -24,15 +24,17 @@ export default function Hero() {
       w={"full"}
       gap={10}
     >
-      <Stack alignItems={"center"} my={'40px'}>
-        <Text color={"#737373"} fontSize={"lg"}>
+      <Stack alignItems={"center"} my={"40px"}>
+        <Text color={"#737373"} fontSize={"18px"} fontWeight={"bold"}>
           WHAT WE DO
         </Text>
 
         <Heading
           // as={"h1"}
-          fontSize={{ base: "3xl", md: "5xl", lg: "7xl" }}
+          fontSize={{ base: "40px", md: "50px", lg: "55px" }}
           color={"#252B42"}
+          maxWidth={{ base: "300px", sm: "full" }}
+          textAlign={"center"}
         >
           Innovation tailored for you
         </Heading>
@@ -41,6 +43,7 @@ export default function Hero() {
           spacing="8px"
           separator={<FaGreaterThan color="gray.500" />}
           fontWeight={"bold"}
+          mt={"25px"}
         >
           <BreadcrumbItem>
             <BreadcrumbLink href="#" color={"#252B42"}>
@@ -56,18 +59,25 @@ export default function Hero() {
         </Breadcrumb>
       </Stack>
 
-      <Grid templateColumns={"repeat(2, 1fr)"}>
+      <Grid
+        templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }}
+        gap={3}
+      >
         <GridItem mx={"auto"}>
           <Image
             src={"/assets/unsplash_Lks7vei-eAgimg1.png"}
             alt="Main Image"
+            // h={"280px"}
+            // maxH={"auto"}
+            // maxWidth={'auto'}
           />
         </GridItem>
         <GridItem>
           <Grid
             templateColumns={"repeat(2, 1fr)"}
-            // templateRows={"repeat(2, 1fr)"}
-            gap={2}
+            gap={3}
+            // minH={"full"}
+            // maxWidth={"full"}
           >
             <GridItem>
               <Image

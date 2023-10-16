@@ -21,13 +21,14 @@ export default function RootLayout({
     <html>
       <body>
         {/* <CacheProvider> */}
-        <Stack maxWidth={'1460px'} mx={'auto'}>
-          <ChakraProvider>
+
+        <ChakraProvider>
+          <Stack maxWidth={"1460px"} mx={"auto"}>
             <Navbar />
             {children}
             <Footer />
-          </ChakraProvider>
-        </Stack>
+          </Stack>
+        </ChakraProvider>
 
         {/* </CacheProvider> */}
       </body>

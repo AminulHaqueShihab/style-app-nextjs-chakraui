@@ -1,11 +1,13 @@
-import { Stack, Heading, Text, Button, Flex } from "@chakra-ui/react";
+import { Stack, Heading, Text, Button, Flex, Show } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter, FaLinkedin } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 
 const Action = () => {
   return (
-    <Stack align={"center"} margin={"170px"} gap={8}>
-      <Heading color={"#252B42"}>Start your 14 days free trial</Heading>
+    <Stack alignItems={"center"} marginY={"170px"} px={13} gap={8}>
+      <Heading color={"#252B42"} textAlign={'center'} fontSize={'40px'}>
+        Start your <Show below="sm"><br /></Show> 14 days free trial
+      </Heading>
       <Flex
         fontSize={"14px"}
         w={"40vh"}
@@ -13,7 +15,7 @@ const Action = () => {
         justify={"center"}
         textAlign={"center"}
       >
-        <Text alignItems={"center"} color={"#737373"}>
+        <Text alignItems={"center"} color={"#737373"} px={{base: 10, md:0}}>
           Met minim Mollie non desert Alamo est sit cliquey dolor do met sent.
           RELIT official consequent.
         </Text>

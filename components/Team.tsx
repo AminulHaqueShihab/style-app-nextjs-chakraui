@@ -5,13 +5,18 @@ import img1 from "/assets/team-1-user-1.jpg";
 export default function Team() {
   return (
     <Stack alignItems={"center"} gap={5}>
-      <Heading m={"80px"} color={"#252B42"} fontSize={"45px"}>
+      <Heading
+        m={"80px"}
+        color={"#252B42"}
+        fontSize={"45px"}
+        textAlign={"center"}
+      >
         Meet Our Team
       </Heading>
 
       <Grid
-        templateColumns={"repeat(3, 1fr)"}
-        rowGap={"100px"}
+        templateColumns={{ md: "repeat(2, 1fr)", lg: "repeat(3, 1fr)" }}
+        rowGap={"80px"}
         columnGap={"30px"}
       >
         <Member imgprop={"/assets/team-1-user-1.jpg"} />

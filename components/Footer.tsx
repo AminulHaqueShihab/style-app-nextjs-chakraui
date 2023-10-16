@@ -1,3 +1,5 @@
+"use client";
+import { useState } from "react";
 import {
   Stack,
   Flex,
@@ -8,14 +10,24 @@ import {
   Text,
   Input,
   Button,
+  Show,
+  InputGroup,
+  InputRightElement,
+
 } from "@chakra-ui/react";
 import { FaFacebook, FaTwitter } from "react-icons/fa";
 import { FiInstagram } from "react-icons/fi";
 const Footer = () => {
+  const [show, setShow] = useState(false);
+  const handleClick = () => setShow(!show);
   return (
     <Stack>
-      <Stack px={"200px"}>
-        <Flex justify={"space-between"}>
+      <Stack px={{ base: "40px", sm: "75px", md: "150px", lg: "200px" }}>
+        <Flex
+          justify={"space-between"}
+          direction={{ base: "column", sm: "row" }}
+          gap={3}
+        >
           <Heading>Bandage</Heading>
           <Flex gap={4} color={"#23A6F0"}>
             <FaFacebook size={"24px"} />
@@ -24,7 +36,15 @@ const Footer = () => {
           </Flex>
         </Flex>
         <Divider my={"50px"} />
-        <Grid templateColumns={"repeat(5, 1fr)"} mb={"50px"}>
+        <Grid
+          templateColumns={{
+            base: "repeat(1, 1fr)",
+            md: "repeat(2, 1fr)",
+            lg: "repeat(5, 1fr)",
+          }}
+          mb={"50px"}
+          gap={8}
+        >
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Company Info
@@ -97,7 +117,19 @@ const Footer = () => {
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Get in Touch
             </Text>
-            <GridItem colSpan={2}>
+            <GridItem >
+              {/* <InputGroup size="lg">
+                <Input
+                  
+                  type={'email'}
+                  placeholder="Enter Email"
+                />
+                <InputRightElement>
+                  <Button size="lg" colorScheme="twitter" w={'100px'}>
+                    Subscribe
+                  </Button>
+                </InputRightElement>
+              </InputGroup> */}
               <Flex justify={"center"}>
                 <Input
                   placeholder="Enter Email"
@@ -116,14 +148,20 @@ const Footer = () => {
           </Stack>
         </Grid>
       </Stack>
-      <Flex bg={"gray.100"} py={"20px"}>
+      <Flex bg={"gray.100"} py={"20px"} maxWidth={"full"} alignItems={"center"}>
         <Text
-          ml={"200px"}
+          // ml={{base:'unset', lg:'200px'}}
+          textAlign={"center"}
           color={"#737373"}
           fontWeight={"bold"}
           fontSize={"sm"}
+          mx={{ base: "auto", lg: "200px" }}
         >
-          Made With Love By Finland All Right Reserved{" "}
+          Made With Love By{" "}
+          <Show below="sm">
+            <br />
+          </Show>{" "}
+          Finland All Right Reserved{" "}
         </Text>
       </Flex>
     </Stack>

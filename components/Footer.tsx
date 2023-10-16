@@ -24,7 +24,11 @@ const Footer = () => {
           </Flex>
         </Flex>
         <Divider my={"50px"} />
+<<<<<<< Updated upstream
         <Grid templateColumns={"repeat(5, 1fr)"} mb={'50px'}>
+=======
+        <Grid templateColumns={"repeat(6, 1fr)"} mb={"50px"}>
+>>>>>>> Stashed changes
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Company Info
@@ -44,7 +48,7 @@ const Footer = () => {
           </Stack>
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
-              Company Info
+              Legal
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
               About Us
@@ -61,44 +65,44 @@ const Footer = () => {
           </Stack>
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
-              Company Info
-            </Text>
-            <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
               About Us
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              Carrier
+              Business Marketing
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              We are hiring
+              User Analytic
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              Blog
+              Live Chat
+            </Text>
+            <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
+              Unlimited Support
             </Text>
           </Stack>
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
-              Company Info
+              Resources
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              About Us
+              IOS & Android
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              Carrier
+              Watch a Demo
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              We are hiring
+              Customers
             </Text>
             <Text fontSize={"14px"} fontWeight={"bold"} color={"#737373"}>
-              Blog
+              API
             </Text>
           </Stack>
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Get in Touch
             </Text>
-            <GridItem colSpan={2}>
-              <Flex justify={'center'}>
+            <GridItem colSpan={2} rowGap={2}>
+              <Flex justify={"center"}>
                 <Input
                   placeholder="Enter Email"
                   w={"200px"}
@@ -109,12 +113,22 @@ const Footer = () => {
                   Subscribe
                 </Button>
               </Flex>
+              <Text fontSize={"sm"} color={"#737373"}>
+                Lore imp sum dolor Amit
+              </Text>
             </GridItem>
           </Stack>
         </Grid>
       </Stack>
-      <Flex bg={'gray.100'} py={'20px'}>
-        <Text ml={'200px'} color={'#737373'} fontWeight={'bold'} fontSize={'sm'}>Made With Love By Finland All Right Reserved </Text>
+      <Flex bg={"gray.100"} py={"20px"}>
+        <Text
+          ml={"200px"}
+          color={"#737373"}
+          fontWeight={"bold"}
+          fontSize={"sm"}
+        >
+          Made With Love By Finland All Right Reserved{" "}
+        </Text>
       </Flex>
     </Stack>
   );

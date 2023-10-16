@@ -1,4 +1,4 @@
-import { ChakraProvider } from "@chakra-ui/react";
+import { ChakraProvider, Stack } from "@chakra-ui/react";
 import { CacheProvider } from "@chakra-ui/next-js";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -21,11 +21,14 @@ export default function RootLayout({
     <html>
       <body>
         {/* <CacheProvider> */}
+        <Stack maxWidth={'1460px'} mx={'auto'}>
           <ChakraProvider>
             <Navbar />
             {children}
             <Footer />
           </ChakraProvider>
+        </Stack>
+
         {/* </CacheProvider> */}
       </body>
     </html>

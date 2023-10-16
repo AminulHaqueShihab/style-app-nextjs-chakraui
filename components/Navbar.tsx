@@ -18,7 +18,7 @@ export default function Navbar() {
       justify={"space-between"}
       py={8}
       px={"59px"}
-      alignItems={"center"}
+      alignItems={"center"}      
       // display={{ base: "none" }}
     >
       <Flex alignItems={"center"} gap={"180px"}>

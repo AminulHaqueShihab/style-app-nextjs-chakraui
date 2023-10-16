@@ -24,11 +24,7 @@ const Footer = () => {
           </Flex>
         </Flex>
         <Divider my={"50px"} />
-<<<<<<< Updated upstream
-        <Grid templateColumns={"repeat(5, 1fr)"} mb={'50px'}>
-=======
-        <Grid templateColumns={"repeat(6, 1fr)"} mb={"50px"}>
->>>>>>> Stashed changes
+        <Grid templateColumns={"repeat(5, 1fr)"} mb={"50px"}>
           <Stack>
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Company Info
@@ -101,7 +97,7 @@ const Footer = () => {
             <Text fontSize={"16px"} fontWeight={"bold"} color={"#252B42"}>
               Get in Touch
             </Text>
-            <GridItem colSpan={2} rowGap={2}>
+            <GridItem colSpan={2}>
               <Flex justify={"center"}>
                 <Input
                   placeholder="Enter Email"
@@ -109,7 +105,7 @@ const Footer = () => {
                   h={"48px"}
                   bg={"gray.100"}
                 />
-                <Button colorScheme='twitter' size={'lg'} px={'30px'}>
+                <Button colorScheme="twitter" size={"lg"} px={"30px"}>
                   Subscribe
                 </Button>
               </Flex>
